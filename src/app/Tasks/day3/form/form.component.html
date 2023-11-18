@@ -1,0 +1,32 @@
+<section>
+    <div class="container">
+        <form class="my-5">
+            <h1 class="my-3">Login</h1>
+            <!-- username -->
+            <div class="mb-3">
+                <label for="InputName" class="form-label">{{userName}}</label>
+                <input type="text" class="form-control border-warning" id="InputName" placeholder="{{userNameValue}}">          
+            </div>
+            <!-- email -->
+            <div class="mb-3">
+              <label for="InputEmail" class="form-label">{{email}}</label>
+              <input type="email" class="form-control border-warning" id="InputEmail" placeholder="{{emailValue}}">          
+            </div>
+            <!-- password -->
+            <div class="mb-3">
+              <label for="InputPassword" class="form-label">{{password}}</label>
+              <input type="password" class="form-control border-warning" id="InputPassword" placeholder="{{passwordValue}}">
+            </div>
+            <!-- age -->
+            <div class="mb-3">
+                <label for="InputAge" class="form-label">{{age}}</label>
+                <input type="number" class="form-control border-warning" id="InputAge" placeholder="{{ageValue}}">
+            </div>
+            <div class="mb-3 form-check">
+              <input type="checkbox" class="form-check-input border-warning" id="Check">
+              <label class="form-check-label" for="Check">{{check}}</label>
+            </div>
+            <button type="submit" class="btn btn-warning">{{submit}}</button>
+          </form>
+    </div>
+</section>
