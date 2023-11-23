@@ -6,9 +6,11 @@ import { Component } from '@angular/core';
   styleUrls: ['./form.component.css']
 })
 export class FormComponent {
+  // interpolation relationship between HTML & TS
+  title = "Login"
 
   userName = "Username:";
-  userNameValue = "Yomna-Raafat";
+  userNameValue = "ex: Yomna-Raafat";
 
   email = "Email address:";
   emailValue = "ex: yomna@gmail.com";
@@ -17,9 +19,9 @@ export class FormComponent {
   passwordValue ="ex: P@$$w0rd-123";
 
   age = "Age:";
-  ageValue = "25";  
+  ageValue = "ex: 25";  
 
   check = "Check me out";
   submit = "Click Me";
-  
+  // interpolation relationship between HTML & TS
 }
