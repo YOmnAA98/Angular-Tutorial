@@ -5,20 +5,17 @@ import { Component } from '@angular/core';
   templateUrl: './binding.component.html',
   styleUrls: ['./binding.component.css']
 })
-export class BindingComponent {
-  // data binding => interpolation
-  title = "Event Binding";
-  name = ""
-  // attribute binding  => 
+export class BindingComponent {  
   
+  title = "Event Binding";  
 
-  // event binding
   red = "";
   changeColor(){
     this.red  = "red";
   }  
 
-  setName(){
+  name = ""
+  deleteName(){
     this.name = "";
   }
 }
