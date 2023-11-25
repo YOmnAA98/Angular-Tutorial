@@ -10,6 +10,7 @@ import { NavbarComponent } from './Tasks/day2/navbar/navbar.component';
 import { CourseComponent } from './Tasks/day2/course/course.component';
 import { FormComponent } from './Tasks/day3/form/form.component';
 import { BindingComponent } from './Tasks/day4/binding/binding.component';
+import { Day5Component } from './Tasks/day5/day5/day5.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { BindingComponent } from './Tasks/day4/binding/binding.component';
     NavbarComponent,
     CourseComponent,
     FormComponent,
-    BindingComponent
+    BindingComponent,
+    Day5Component
   ],
   imports: [
     BrowserModule,

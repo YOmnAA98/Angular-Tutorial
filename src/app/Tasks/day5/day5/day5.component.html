@@ -1,0 +1,7 @@
+<section class="py-5">
+    <div class="container">                
+        <label class="form-label">Info: {{infoValue}}</label>
+        <input [(ngModel)]="infoValue" #inValue type="text" class="form-control mb-3 border-warning shadow-none w-25" placeholder="type here...!">
+        <button type="button" class="btn btn-warning" (click)="getPrint(inValue.value)">Click</button>        
+    </div>
+</section>
