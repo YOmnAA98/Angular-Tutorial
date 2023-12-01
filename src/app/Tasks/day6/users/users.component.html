@@ -1,0 +1,9 @@
+<section class="py-5">
+    <div class="container">
+        <h1>Users Data</h1>
+        <div class="row row-cols-md-2">
+            <app-user1 (userData)="getData($event)"></app-user1>            
+            <app-user2 [user2]="user"></app-user2>
+        </div>    
+    </div>    
+</section>

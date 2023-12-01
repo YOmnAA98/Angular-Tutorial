@@ -1,0 +1,9 @@
+<section class="py-5">
+    <ul class="list-group">
+        <li class="list-group-item d-flex justify-content-between" *ngFor="let user of users">
+            <span>{{user.name}}</span>
+            <button class="btn btn-warning shadow-none" (click)="showDetails(user)">view</button>            
+        </li>        
+        <!-- <button class="btn btn-success my-3">Add user</button> -->
+    </ul>
+</section>

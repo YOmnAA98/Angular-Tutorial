@@ -11,6 +11,9 @@ import { CourseComponent } from './Tasks/day2/course/course.component';
 import { FormComponent } from './Tasks/day3/form/form.component';
 import { BindingComponent } from './Tasks/day4/binding/binding.component';
 import { Day5Component } from './Tasks/day5/day5/day5.component';
+import { UsersComponent } from './Tasks/day6/users/users.component';
+import { User1Component } from './Tasks/day6/users/user1/user1.component';
+import { User2Component } from './Tasks/day6/users/user2/user2.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +24,10 @@ import { Day5Component } from './Tasks/day5/day5/day5.component';
     CourseComponent,
     FormComponent,
     BindingComponent,
-    Day5Component
+    Day5Component,
+    UsersComponent,
+    User1Component,
+    User2Component
   ],
   imports: [
     BrowserModule,
