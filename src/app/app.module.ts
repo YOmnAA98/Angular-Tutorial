@@ -14,6 +14,8 @@ import { Day5Component } from './Tasks/day5/day5/day5.component';
 import { UsersComponent } from './Tasks/day6/users/users.component';
 import { User1Component } from './Tasks/day6/users/user1/user1.component';
 import { User2Component } from './Tasks/day6/users/user2/user2.component';
+import { Home2Component } from './Tasks/day7/home2/home2.component';
+import { DetailsComponent } from './Tasks/day7/details/details.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +29,9 @@ import { User2Component } from './Tasks/day6/users/user2/user2.component';
     Day5Component,
     UsersComponent,
     User1Component,
-    User2Component
+    User2Component,
+    Home2Component,
+    DetailsComponent
   ],
   imports: [
     BrowserModule,

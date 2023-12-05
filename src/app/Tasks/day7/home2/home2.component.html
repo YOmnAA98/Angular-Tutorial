@@ -1,0 +1,24 @@
+<main class="home">
+    <div class="container">        
+        <header>
+            <h1><i class="bi bi-house"></i> Homes</h1>
+        </header>        
+        <section class="content">
+            <form class="d-flex py-3">
+                <input type="text" class="form-control shadow-none me-2" placeholder="Filter by city" #filter>
+                <button class="btn" type="button" (click)="filterResults(filter.value)">Search</button>
+              </form>
+
+              <main *ngFor="let housingLocation of housingLocationList" class="result row row-cols-sm-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-3 row-cols-xxl-4">
+                <div>
+                    <div class="listing">
+                        <img class="listing-photo" [src]="housingLocation.photo" alt="Exterior photo of {{housingLocation.name}}">
+                        <h2 class="listing-heading">{{ housingLocation.name }}</h2>
+                        <p class="listing-location">{{ housingLocation.city}}, {{housingLocation.state }}</p>
+                        <a routerLink="/details">Learn More</a>
+                    </div>
+                </div>
+            </main>
+        </section>        
+    </div>
+</main>

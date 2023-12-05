@@ -2,8 +2,15 @@
     <ul class="list-group">
         <li class="list-group-item d-flex justify-content-between" *ngFor="let user of users">
             <span>{{user.name}}</span>
-            <button class="btn btn-warning shadow-none" (click)="showDetails(user)">view</button>            
-        </li>        
-        <!-- <button class="btn btn-success my-3">Add user</button> -->
+            <div class="d-flex gap-2">
+                <button class="btn btn-warning shadow-none" (click)="showDetails(user)">view</button>
+                <button class="btn btn-primary shadow-none" (click)="editUser(user)">Edit</button>
+                <button class="btn btn-danger shadow-none" (click)="deleteUser(user)">Delete</button>
+            </div>
+        </li>   
+        <input #nameValue type="text" class="form-control my-3" placeholder="Add Name...!">
+        <input #ageValue type="number" class="form-control my-3" placeholder="Add Age...!">
+        <input #countryValue type="text" class="form-control my-3" placeholder="Add Country...!">
+        <button class="btn btn-success my-3" (click)="addUser(users.length +1 , nameValue.value, ageValue.value, countryValue.value)">Add user</button>
     </ul>
 </section>

@@ -46,19 +46,20 @@ export class User1Component {
   },
 ]
 
-showDetails(user: UserData){
-this.userData.emit(user);
-}
+  showDetails(user: UserData){
+    this.userData.emit(user);
+  }
 
-// @Output() newID  = new EventEmitter<number>();
-// @Output() newName = new EventEmitter<string>();
-// @Output() newAge = new EventEmitter<number>();
-// @Output() newCountry  = new EventEmitter<string>();
+  addUser(idPara: any, namePara: any, agePara: any, countryPara: any) {
+    this.users.push({ id: idPara, name: namePara, age: agePara, country: countryPara });
+  }
 
-// addUser(id: number, name: string, age: number, country: string) {
-//     this.newID.emit(id);
-//     this.newName.emit(name);
-//     this.newAge.emit(age);
-//     this.newCountry.emit(country);
-//   }
+  deleteUser(para: UserData){
+    const index = this.users.findIndex(e => e.id = para.id);
+    this.users.splice(index, 1);
+  }
+
+  editUser(para: UserData){
+
+  }
 }

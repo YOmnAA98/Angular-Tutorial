@@ -1,0 +1,40 @@
+.home .content form input:focus {
+  border: 1px solid var(--primary-color);
+}
+.home .content form button {
+  background-color: var(--primary-color);
+  color: var(--white-color);
+}
+
+.home .listing {
+  background: #E8E7FB;
+  border-radius: 20px;  
+  padding-bottom: 10px;
+}
+.home .listing-heading {
+  color: var(--primary-color);
+  padding: 10px 20px 0 20px;
+}
+.home .listing-photo {  
+  height: 250px;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 20px 20px 0 0;
+}
+.home .listing-location {  
+  padding: 10px 20px 20px 20px;
+}
+.home .listing-location::before {
+  content: url("/assets/location-pin.svg") / "";
+}
+
+.listing a {
+  padding-left: 20px;
+  display: inline-block;
+  text-decoration: none;
+  color: var(--primary-color);
+}
+.listing a::after {
+  content: "\203A";
+  margin-left: 5px;
+}
